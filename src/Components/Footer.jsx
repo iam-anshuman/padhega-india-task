@@ -54,7 +54,7 @@ function Footer() {
                 <h2 className="title-font font-medium  tracking-widest text-sm mb-3">SUBSCRIBE TO OUR NEWSLETTER</h2>
                 <div className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
                   <div className="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
-                    <label for="footer-field" className="leading-7 text-sm text-gray-400">Get Update on New Collection</label>
+                    <label htmlFor="footer-field" className="leading-7 text-sm text-gray-400">Get Update on New Collection</label>
                     <input type="email" id="footer-field" name="footer-field" className="w-full bg-gray-400 rounded border bg-opacity-40  focus:bg-transparent focus:ring-2 focus:ring-yellow-900 focus:border-yellow-500 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" onChange={(e)=>setEmail(e.target.value)} value={email}/>
                   </div>
                   <button className="btn btn-accent" onClick={handleSubscribe}>Suscribe</button>
