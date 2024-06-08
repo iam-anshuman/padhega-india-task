@@ -8,7 +8,7 @@ const FeaturedData = [
     {
         title: "King: A Life",
         author: "Jonathan Eig",
-        image: "/King A Life.jpg"
+        image: "/King A life.jpg"
     },
     {
         title: "Stolen Focus: Why You Can't Pay Attention--and How to Think Deeply Again",
