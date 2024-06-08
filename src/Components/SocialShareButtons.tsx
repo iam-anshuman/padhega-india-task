@@ -4,14 +4,14 @@ import { useEffect } from 'react';
 const SocialShareButtons = () => {
   useEffect(() => {
     // Load Facebook SDK
-    if (window.FB) return;
+    if ((window as any).FB) return;
     const fbScript = document.createElement('script');
     fbScript.src = 'https://connect.facebook.net/en_US/sdk.js';
     fbScript.async = true;
     fbScript.defer = true;
     fbScript.crossOrigin = 'anonymous';
     fbScript.onload = () => {
-      window.FB.init({
+      (window as any).FB.init({
         appId: '986396536472858', // Replace with your Facebook app ID
         xfbml: true,
         version: 'v12.0',
@@ -35,10 +35,10 @@ const SocialShareButtons = () => {
   }, []);
 
   const shareOnFacebook = () => {
-    FB.ui({
+    (window as any).FB.ui({
       method: 'share',
       href: window.location.href,
-    }, function(response){});
+    }, function(response: any){});
   };
 
   const shareOnTwitter = () => {
