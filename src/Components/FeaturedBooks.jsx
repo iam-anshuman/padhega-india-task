@@ -54,7 +54,7 @@ function FeaturedBooks() {
         {FeaturedData.map((feautedBook,index)=>{
           return   <div className="carousel-item max-w-64 group cursor-pointer" key={`${feautedBook.title}-${index}`}>
                 <div >
-                    <Image  src={feautedBook.image} width={250} height={250}/>
+                    <Image  src={feautedBook.image} width={250} height={250} alt={feautedBook.title}/>
                     <div className="my-4">
                         <div className="font-bold group-hover:text-accent" >{feautedBook.title}</div>
                         <div>{feautedBook.author}</div>
